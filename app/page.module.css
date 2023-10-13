@@ -53,12 +53,13 @@
 
 .icon {
   position: absolute;
-  top: 19px;
-  right: 16px;
+  top: 17px;
+  right: 13px;
 }
 
 .arrowUp {
   top: 14px;
+  right: 12px;
   transform: rotate(180deg);
 }
 

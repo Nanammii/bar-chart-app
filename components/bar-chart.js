@@ -42,7 +42,7 @@ export default function BarChart({data}) {
                 }
             }
         },
-        barPercentage: 0.5,
+        barPercentage: 0.6,
         hoverBackgroundColor: 'rgb(62,65,140)',
     };
 
@@ -52,7 +52,6 @@ export default function BarChart({data}) {
         labels,
         datasets: [
             {
-                label: 'bar chart',
                 data: Object.values(data),
                 backgroundColor: 'rgb(0,10,255)',
                 borderRadius: 4,
