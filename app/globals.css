@@ -10,6 +10,7 @@ body {
 }
 
 body {
+  min-width: 1440px;
   color: #000;
   background: #ffffff;
   font-size: 16px;

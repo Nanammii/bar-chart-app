@@ -16,7 +16,6 @@ export default function BarChart({data}) {
         },
         scales: {
             x: {
-                barThickness: 20,
                 grid: {
                     display: false,
                 },
@@ -25,6 +24,8 @@ export default function BarChart({data}) {
                         size: 20,
                     },
                     maxRotation: 0,
+                    maxTicksLimit: 16,
+                    color: '#000000'
                 },
             },
             y: {
@@ -33,12 +34,15 @@ export default function BarChart({data}) {
                 },
                 ticks: {
                     font: {
-                        size: 20
-                    }
+                        size: 20,
+                    },
+                    min: 0,
+                    max: 10000,
+                    color: '#000000'
                 }
             }
         },
-        barPercentage: 0.4,
+        barPercentage: 0.5,
         hoverBackgroundColor: 'rgb(62,65,140)',
     };
 
@@ -51,6 +55,8 @@ export default function BarChart({data}) {
                 label: 'bar chart',
                 data: Object.values(data),
                 backgroundColor: 'rgb(0,10,255)',
+                borderRadius: 4,
+                barThickness: 16,
             },
         ],
     };
